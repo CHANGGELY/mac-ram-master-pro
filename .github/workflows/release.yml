@@ -5,6 +5,9 @@ on:
     tags:
       - 'v*' # 当推送以 v 开头的标签时触发，例如 v1.0.0
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: macos-latest
@@ -20,9 +23,13 @@ jobs:
           cache: 'npm'
 
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Build and Release
-        run: npm run dist
+      - name: Build
+        run: npm run build
+
+      - name: Package and Publish Release
+        run: npm run dist -- --publish always
         env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

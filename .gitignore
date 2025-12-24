@@ -4,5 +4,3 @@ release
 *.log
 .DS_Store
 out
-package-lock.json
-
