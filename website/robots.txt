@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://changgely.github.io/mac-ram-master-pro/sitemap.xml
