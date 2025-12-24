@@ -1,7 +1,11 @@
 {
   "name": "mac-ram-cleaner-pro",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Professional macOS RAM Cleaner with Apple-grade UI",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CHANGGELY/mac-ram-master-pro.git"
+  },
   "main": "dist/main/main.js",
   "scripts": {
     "dev": "vite",
