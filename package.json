@@ -1,6 +1,6 @@
 {
   "name": "mac-ram-cleaner-pro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Professional macOS RAM Cleaner with Apple-grade UI",
   "main": "dist/main/main.js",
   "scripts": {
